@@ -1,0 +1,18 @@
+[2025-04-16 23:31:04] [/workspaces/cs190_ICE2] source .devcontainer/shell.sh
+[2025-04-16 23:36:03] [/workspaces/cs190_ICE2] mkdir project
+[2025-04-16 23:37:02] [/workspaces/cs190_ICE2] mkdir project/docs
+[2025-04-16 23:37:10] [/workspaces/cs190_ICE2] mkdir project/docs/drafts
+[2025-04-16 23:37:16] [/workspaces/cs190_ICE2] mkdir project/docs/final
+[2025-04-16 23:38:31] [/workspaces/cs190_ICE2] mkdir project/src
+[2025-04-16 23:38:57] [/workspaces/cs190_ICE2] mkdir -p project/src/{lib,tests}
+[2025-04-16 23:39:11] [/workspaces/cs190_ICE2] mkdir project/backup
+[2025-04-16 23:41:05] [/workspaces/cs190_ICE2] tree
+[2025-04-16 23:42:44] [/workspaces/cs190_ICE2] touch project/docs/drafts/outline.txt
+[2025-04-16 23:43:02] [/workspaces/cs190_ICE2] touch project/src/lib/functions.py
+[2025-04-16 23:43:14] [/workspaces/cs190_ICE2] touch project/src/tests/test_functions.py
+[2025-04-16 23:45:11] [/workspaces/cs190_ICE2] cp project/src/lib/functions.py project/backup
+[2025-04-16 23:47:00] [/workspaces/cs190_ICE2] mv project/docs/drafts/outline.txt project/docs/final/outline.txt
+[2025-04-16 23:47:57] [/workspaces/cs190_ICE2] ln -s project/src/lib/functions.py project/docs/final
+[2025-04-16 23:48:51] [/workspaces/cs190_ICE2] find -name "*.py"
+[2025-04-16 23:51:02] [/workspaces/cs190_ICE2] find . -type d | wc -l
+[2025-04-16 23:51:20] [/workspaces/cs190_ICE2] find . -type f | wc -l
